@@ -5,7 +5,9 @@ import humanize
 from discord.ext.commands import Bot
 import requests
 from datetime import datetime
+from dotenv import load_dotenv
 
+load_dotenv()
 BASE_URL = 'https://yfapi.net'
 TOKEN = os.getenv('DISCORD_TOKEN')
 API_KEY = os.getenv('YFINANCE_API_TOKEN')
